@@ -1,3 +1,132 @@
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+  --Font-Epilogue: "Epilogue", sans-serif;
+}
 
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  text-decoration: none;
+  border: 2px solid var(--Medium-Gray);
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.btn-primary {
+  background-color: var(--Almost-Black);
+  border-color: var(--Almost-Black);
+  color: var(--Almost-White);
+  padding: 1.5rem 3rem;
+}
+.btn-primary:hover {
+  background-color: var(--Almost-White);
+  color: var(--Almost-Black);
+}
+.btn-secondary {
+  padding: 1rem 2rem;
+}
+.btn-secondary:hover {
+  color: var(--Almost-Black);
+}
+
+body {
+  font-family: var(--Font-Epilogue);
+}
+body header {
+  max-width: 1440px;
+  margin: auto;
+}
+body header .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+body header .header-container a {
+  color: var(--Medium-Gray);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+body header .header-container .header-left {
+  display: flex;
+  align-items: center;
+  gap: min(2.2vw, 6rem);
+}
+body header .header-container .header-left .logo {
+  width: 10rem;
+  margin-right: 2rem;
+}
+body header .header-container .header-right {
+  display: flex;
+  align-items: center;
+  gap: min(2.2vw, 6rem);
+}
+body main {
+  max-width: 1100px;
+  margin: auto;
+}
+body main .container-main {
+  margin: auto;
+  display: flex;
+  gap: 10rem;
+}
+body main .container-main .body-left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  row-gap: 12rem;
+}
+body main .container-main .body-left .information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 5rem;
+}
+body main .container-main .body-left .information h1 {
+  font-size: 7.1rem;
+  font-weight: 700;
+}
+body main .container-main .body-left .information p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--Medium-Gray);
+  line-height: 2.7rem;
+}
+body main .container-main .body-left .information a {
+  font-size: 17px;
+}
+body main .container-main .body-left .partners {
+  display: flex;
+  gap: 4rem;
+}
+body main .container-main .body-left .partners img {
+  width: 100%;
+  object-fit: contain;
+}
+body main .container-main .body-right {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+body main .container-main .body-right img {
+  width: 50rem;
+  height: auto;
+}
 
 /*# sourceMappingURL=style.css.map */

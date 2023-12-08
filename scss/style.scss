@@ -1,0 +1,116 @@
+@use "variables" as *;
+@use "reset" as *;
+@use "utils" as *;
+@use "classes" as *;
+
+body {
+  font-family: var(--Font-Epilogue);
+
+  header {
+    max-width: 1440px;
+    margin: auto;
+
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem 2.6rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+
+      a {
+        color: var(--Medium-Gray);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+      }
+
+      .header-left {
+        display: flex;
+        align-items: center;
+        gap: min(2.2vw, 6rem);
+
+        .logo {
+          width: 10rem;
+          margin-right: 2rem
+        }
+      }
+
+      .header-right {
+        display: flex;
+        align-items: center;
+        gap: min(2.2vw, 6rem);
+      }
+    }
+  }
+
+  main {
+    max-width: 1100px;
+    margin: auto;
+
+    .container-main {
+      margin: auto;
+      display: flex;
+      gap: 10rem;
+
+      .body-left {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        row-gap: 12rem;
+
+        .information {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          row-gap: 5rem;
+
+          h1 {
+            font-size: 7.1rem;
+            font-weight: 700;
+          }
+
+          p {
+            font-size: 1.8rem;
+            font-weight: 500;
+            color: var(--Medium-Gray);
+            line-height: 2.7rem;
+          }
+
+          a {
+            font-size: 17px;
+          }
+        }
+
+        .partners {
+          display: flex;
+          gap: 4rem;
+
+          img {
+            width: 100%;
+            object-fit: contain;
+          }
+        }
+      }
+
+      .body-right {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 50rem;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+
+

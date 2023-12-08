@@ -1,39 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
+<header>
+    <div class="header-container">
+        <div class="header-left">
 
-  Features
-  Company
-  Careers
-  About
-
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+            <img src="./images/logo.svg" alt="Logo" class="logo">
+            <a href="#">Features<img src="./images/icon-arrow-down.svg" alt="Icon arrow down"></a>
+            <a href="#">Company<img src="./images/icon-arrow-down.svg" alt="Icon arrow down"></a>
+            <a href="#">Careers</a>
+            <a href="#">About</a>
+        </div>
+        <div class="header-right">
+            <a href="#">Login</a>
+            <a href="#" class="btn btn-secondary">Register</a>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container-main">
+        <div class="body-left">
+            <div class="information">
+                <h1>Make <br> remote work</h1>
+                <p>
+                    Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+                    productivity
+                    soar.
+                </p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+            <div class="partners">
+                <img src="./images/client-databiz.svg" alt="Icon Databiz">
+                <img src="./images/client-audiophile.svg" alt="Icon Audiophile">
+                <img src="./images/client-meet.svg" alt="Icon Meet">
+                <img src="./images/client-maker.svg" alt="Icon Maker">
+            </div>
+        </div>
+        <div class="body-right">
+            <img src="./images/image-hero-desktop.png" alt="Picture">
+        </div>
+    </div>
+</main>
 </body>
 </html>

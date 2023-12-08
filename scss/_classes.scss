@@ -1,0 +1,27 @@
+.btn {
+
+  text-decoration: none;
+  border: 2px solid var(--Medium-Gray);
+  border-radius: 15px;
+  transition: all 0.3s ease-in-out;
+
+  &-primary {
+    background-color: var(--Almost-Black);
+    border-color: var(--Almost-Black);
+    color: var(--Almost-White);
+    padding: 1.5rem 3rem;
+
+    &:hover {
+      background-color: var(--Almost-White);
+      color: var(--Almost-Black);
+    }
+  }
+
+  &-secondary {
+    padding: 1rem 2rem;
+
+    &:hover {
+      color: var(--Almost-Black);
+    }
+  }
+}
