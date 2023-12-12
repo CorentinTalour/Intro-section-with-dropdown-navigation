@@ -8,22 +8,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6cbdf9f8f4.js" crossorigin="anonymous"></script>
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
 <header>
     <div class="header-container">
         <div class="header-left">
-
-            <img src="./images/logo.svg" alt="Logo" class="logo">
-            <a href="#">Features<img src="./images/icon-arrow-down.svg" alt="Icon arrow down"></a>
-            <a href="#">Company<img src="./images/icon-arrow-down.svg" alt="Icon arrow down"></a>
-            <a href="#">Careers</a>
-            <a href="#">About</a>
+            <div class="container-logo">
+                <img src="./images/logo.svg" alt="Logo" class="logo">
+            </div>
+            <div class="container-nav">
+                <ul class="nav-list">
+                    <li>
+                        <div class="testOwO" id="ClickFeatures">
+                            <a href="#">Features<img src="./images/icon-arrow-down.svg" alt="Icon arrow down"></a>
+                        </div>
+                        <ul class="dropdown-menu dropdown-features">
+                            <li class="item-container">
+                                <img src="./images/icon-todo.svg" alt="Icon todo">
+                                <p>Todo List</p>
+                            </li>
+                            <li class="item-container">
+                                <img src="./images/icon-calendar.svg" alt="Icon Calendar">
+                                <p>Calendar</p>
+                            </li>
+                            <li class="item-container">
+                                <img src="./images/icon-reminders.svg" alt="Icon reminders">
+                                <p>Todo List</p>
+                            </li>
+                            <li class="item-container">
+                                <img src="./images/icon-planning.svg" alt="Icon planning">
+                                <p>Todo List</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div id="ClickCompany">
+                            <a href="#">Company<img src="./images/icon-arrow-down.svg" alt="Icon arrow down"></a>
+                        </div>
+                        <ul class="dropdown-menu dropdown-company">
+                            <li class="item-container">
+                                <p>History</p>
+                            </li>
+                            <li class="item-container">
+                                <p>Our Team</p>
+                            </li>
+                            <li class="item-container">
+                                <p>Blog</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
         </div>
         <div class="header-right">
             <a href="#">Login</a>
             <a href="#" class="btn btn-secondary">Register</a>
+            <i class="fa-solid fa-bars nav-open"></i>
+            <i class="fa-solid fa-xmark nav-close"></i>
         </div>
     </div>
 </header>
@@ -31,7 +76,7 @@
     <div class="container-main">
         <div class="body-left">
             <div class="information">
-                <h1>Make <br> remote work</h1>
+                <h1><span>Make</span> remote work</h1>
                 <p>
                     Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
                     productivity
@@ -47,9 +92,11 @@
             </div>
         </div>
         <div class="body-right">
-            <img src="./images/image-hero-desktop.png" alt="Picture">
+            <img src="./images/image-hero-desktop.png" alt="Picture" class="picture-desktop">
+            <img src="./images/image-hero-mobile.png" alt="Picture" class="picture-mobile">
         </div>
     </div>
 </main>
+<script src="./main.js"></script>
 </body>
 </html>
